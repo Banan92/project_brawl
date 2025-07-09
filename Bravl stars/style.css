@@ -1,0 +1,83 @@
+body{
+margin: 0
+}
+html {
+  background-image: url(media/br.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%; /*Впихнуть всю картинку*/
+}
+.button-link {
+  display: inline-block;
+  background-color: rgb(111, 0, 255);
+  padding: 10px 20px;
+  color: black;
+  border-radius: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+.button-link:hover {
+  background-color: rgb(180, 20, 255);
+}
+.flex-header {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+.flex-footer {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+.button-link:active {
+  transform: translateY(2px);
+}
+
+.button-link:focus {
+  outline: 4px solid black;
+  outline-offset: 3px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+img {
+  display: block;
+  width: 96%;
+  margin: 2%;
+  border: 5px solid black;
+  border-radius: 60px;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background: rgb(255, 217, 0);
+  padding: 2%;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+footer {
+  background: rgb(255, 217, 0);
+  padding: 2%;
+  text-align: center;
+}
+
+
